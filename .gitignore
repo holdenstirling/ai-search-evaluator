@@ -9,3 +9,4 @@ results/
 .env.local
 .DS_Store
 !results/
+!results/

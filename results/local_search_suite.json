@@ -1,0 +1,181 @@
+{
+  "name": "Local Search Quality",
+  "description": "Evaluates search result quality for common local business queries across multiple categories and intents.",
+  "cases": [
+    {
+      "query": "physical therapy near me",
+      "expected_results": [
+        "Nearby PT clinics with addresses",
+        "Ratings and reviews",
+        "Insurance information",
+        "Specialties offered"
+      ],
+      "expected_intent": "Find a physical therapy provider close to the user's location",
+      "category": "local_discovery",
+      "location_context": "Denver, CO",
+      "priority": 5,
+      "tags": [
+        "healthcare",
+        "near_me",
+        "high_intent"
+      ]
+    },
+    {
+      "query": "best dentist downtown Denver",
+      "expected_results": [
+        "Dental practices in downtown Denver",
+        "Patient ratings",
+        "Services offered",
+        "Accepting new patients status"
+      ],
+      "expected_intent": "Find a highly-rated dentist in a specific area",
+      "category": "local_discovery",
+      "location_context": "Denver, CO",
+      "priority": 5,
+      "tags": [
+        "healthcare",
+        "best_of",
+        "location_specific"
+      ]
+    },
+    {
+      "query": "Summit Physical Therapy Denver hours",
+      "expected_results": [
+        "Business hours for Denver location",
+        "Address",
+        "Phone number",
+        "Holiday hours if applicable"
+      ],
+      "expected_intent": "Find operating hours for a specific business location",
+      "category": "navigational",
+      "location_context": "Denver, CO",
+      "priority": 4,
+      "tags": [
+        "hours",
+        "specific_business",
+        "navigational"
+      ]
+    },
+    {
+      "query": "does Summit Physical Therapy accept Blue Cross",
+      "expected_results": [
+        "Insurance acceptance information",
+        "Blue Cross specific details",
+        "Contact for verification"
+      ],
+      "expected_intent": "Verify insurance coverage at a specific provider",
+      "category": "informational",
+      "location_context": "Denver, CO",
+      "priority": 4,
+      "tags": [
+        "insurance",
+        "specific_business",
+        "pre_visit"
+      ]
+    },
+    {
+      "query": "sports injury rehab Boulder Colorado",
+      "expected_results": [
+        "Sports rehabilitation providers in Boulder",
+        "Specialization details",
+        "Athletic-focused services"
+      ],
+      "expected_intent": "Find sports-specialized physical therapy in Boulder",
+      "category": "local_discovery",
+      "location_context": "Boulder, CO",
+      "priority": 4,
+      "tags": [
+        "healthcare",
+        "specialty",
+        "location_specific"
+      ]
+    },
+    {
+      "query": "pizza restaurant with outdoor seating Capitol Hill Denver",
+      "expected_results": [
+        "Pizza places in Capitol Hill",
+        "Outdoor seating availability",
+        "Specific neighborhood results"
+      ],
+      "expected_intent": "Find a pizza restaurant with specific amenities in a specific neighborhood",
+      "category": "local_filtered",
+      "location_context": "Denver, CO",
+      "priority": 3,
+      "tags": [
+        "restaurant",
+        "amenity_filter",
+        "neighborhood"
+      ]
+    },
+    {
+      "query": "emergency plumber available now Denver",
+      "expected_results": [
+        "24/7 plumbers",
+        "Emergency service availability",
+        "Phone numbers for immediate contact"
+      ],
+      "expected_intent": "Find an immediately available emergency service provider",
+      "category": "urgent_local",
+      "location_context": "Denver, CO",
+      "priority": 5,
+      "tags": [
+        "emergency",
+        "immediate_need",
+        "service"
+      ]
+    },
+    {
+      "query": "compare auto repair shops in Lakewood CO",
+      "expected_results": [
+        "Multiple auto repair shops",
+        "Ratings comparison",
+        "Price ranges",
+        "Specialties"
+      ],
+      "expected_intent": "Compare options before choosing an auto repair provider",
+      "category": "comparison",
+      "location_context": "Lakewood, CO",
+      "priority": 3,
+      "tags": [
+        "automotive",
+        "comparison",
+        "research"
+      ]
+    },
+    {
+      "query": "yoga studio first class free Denver",
+      "expected_results": [
+        "Studios offering free first class",
+        "Promotional offers",
+        "Class schedules"
+      ],
+      "expected_intent": "Find a yoga studio with a free trial offer",
+      "category": "transactional",
+      "location_context": "Denver, CO",
+      "priority": 3,
+      "tags": [
+        "fitness",
+        "promotion",
+        "trial"
+      ]
+    },
+    {
+      "query": "how to choose a good physical therapist",
+      "expected_results": [
+        "Selection criteria",
+        "What to look for",
+        "Credentials to verify",
+        "Questions to ask"
+      ],
+      "expected_intent": "Learn how to evaluate and select a physical therapist",
+      "category": "educational",
+      "location_context": "",
+      "priority": 2,
+      "tags": [
+        "healthcare",
+        "educational",
+        "pre_purchase"
+      ]
+    }
+  ]
+}
